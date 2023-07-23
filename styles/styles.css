@@ -1,0 +1,93 @@
+/* ---------- GENERAL STYLING ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+main {
+  width: 40%;
+  max-width: 750px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+fieldset {
+  border: none;
+}
+
+/* ---------- MAIN SECTION  ---------- */
+/* || BUTTON SECTION || */
+.u-container__button {
+  height: 100%;
+  max-height: 600px;
+  max-width: 300px;
+  margin: auto;
+  padding: 5px 0;
+}
+
+.button {
+  display: block;
+  background-color: #62E38B;
+  border: 0;
+  border-radius: 7.5px;
+}
+.button_password_generator, .button_password_validator {
+  width: 80%;
+  height: 50px;
+  margin: 20px auto;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+/* || PASSWORD GENERATOR || */
+.form {
+  padding: 20px 15px;
+  border-radius: 20px;
+  background-color: rgba(50, 77, 230, 0.8509803922);
+  color: white;
+}
+.form__header {
+  padding-bottom: 10px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+.form__u-container {
+  margin: 15px 0;
+}
+.form__input_type_number {
+  width: 10%;
+}
+.form__input {
+  float: right;
+}
+.form__button {
+  height: 30px;
+  width: 75px;
+  margin: 20px auto 0 auto;
+  border-radius: 3px;
+}
+
+.u-container-output {
+  margin: 20px auto;
+}
+
+.generator__output {
+  padding: 5px 5px;
+  background-color: black;
+  color: #F2F1E6;
+  border-radius: 5px;
+}
+
+/* ---------- UTILITIES CLASS ---------- */
+.u-hide {
+  display: none;
+}/*# sourceMappingURL=styles.css.map */

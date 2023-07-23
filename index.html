@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="main.js"></script>
+    <title>Password Generator and Validator</title>
+</head>
+<body>
+    <main class="main">
+        <div class="u-container-button" id="u-container-button">
+            <button class="main--button button button_password_generator" id="generatorButton">Generator</button>
+            <button class="main--button button button_password_validator" id="validatorButton">Validator</button>
+        </div>
+
+        <section class="generator u-hide" id="generator">
+            <form class="form generator__form">
+                <fieldset class="form__fieldset">
+                    <header class="form__header header">Password Generator</header>
+                    <div class="u-container form__u-container">
+                        <label for="length" class="form__label">How long will the password be?</label>
+                        <input type="number" min="4" name="length" id="length" class="form__input form__input_type_number" value="16">
+                    </div>
+                    <div class="u-container form__u-container">
+                        <label for="caps" class="form__label">Do you want to include caps?</label>
+                        <input type="checkbox" name="caps" id="caps" class="form__input">
+                    </div>
+                    <div class="u-container form__u-container">
+                        <label for="symbols" class="form__label">Do you want to include symbols?</label>
+                        <input type="checkbox" name="symbols" id="symbols" class="form__input">
+                    </div>
+                    <div class="u-container form__u-container">
+                        <label for="number" class="form__label">Do you want to include numbers?</label>
+                        <input type="checkbox" name="number" id="number" class="form__input">
+                    </div>
+                    <button class="button form__button" type="button" id="submitGenerator">Submit</button>
+                </fieldset>
+            </form>
+            <div class="u-container u-container-output u-hide" id="u-container-output">Your password is: <span class="output generator__output" id="generator__output"></span></div>
+        </section>
+        
+        <section class="validator u-hide">
+            <form>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>
