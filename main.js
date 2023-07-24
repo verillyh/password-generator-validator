@@ -37,7 +37,8 @@ function generatePassword() {
 }
 
 function copyToClipboard(element) {
-    copyText = element.value;
+    copyText = element.innerHTML;
+    console.log("copied")
     navigator.clipboard.writeText(copyText)
 }
 
