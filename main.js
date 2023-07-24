@@ -36,16 +36,24 @@ function generatePassword() {
 
 }
 
+function copyToClipboard(element) {
+    copyText = element.value;
+    navigator.clipboard.writeText(copyText)
+}
+
+
 // When content is fully loaded...
 document.addEventListener("DOMContentLoaded", () => {
     generatorButton = document.getElementById("generatorButton")
     generatorMainSection = document.getElementById("generator")
     buttonContainer = document.getElementById("u-container-button")
     submitGenerator = document.getElementById("submitGenerator")
+    generatorOutput = document.getElementById("generator__output")
 
-    generatorButton.addEventListener("click", () => {
+    generatorButton.onclick = () => {
         toggleHide(buttonContainer);
         toggleHide(generatorMainSection);
-    })
-    submitGenerator.addEventListener("click", generatePassword)    
+    }
+    submitGenerator.onclick = generatePassword
+    generatorOutput.onclick = () => { copyToClipboard(generatorOutput) }
 })
