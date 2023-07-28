@@ -40,9 +40,16 @@
             <div class="u-container u-container-output u-hide" id="u-container-output">Your password is: <span class="output generator__output" id="generator__output"></span></div>
         </section>
         
-        <section class="validator u-hide">
-            <form>
-                
+        <section class="validator u-hide" id="validator">
+            <form class="form validator__form">
+                <fieldset class="form__fieldset">
+                    <header class="form__header header">Password Validator</header>
+                    <div class="u-container form__u-container">
+                        <label for="password" class="form__label">Password to validate:</label>
+                        <input type="text" name="password" id="password">
+                    </div>
+                    <button class="button form__button" id="submitValidator" type="button">Check</button>
+                </fieldset>
             </form>
         </section>
     </main>
